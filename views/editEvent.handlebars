@@ -1,0 +1,17 @@
+<h1>Edit Exercise</h1>
+
+<form action="/editEvent">
+    <label>Name: </label>
+    <input type="text" name="name" id="name" value={{results.name}}><br>
+    <label>Reps: </label>
+    <input type="number" name="reps" id="reps" value={{results.reps}}><br>
+    <label>Weight: </label>
+    <input type="number" name="weight" id="weight" value={{results.weight}}><br>
+    <label>Date: </label>
+    <input type="date" name="date" id="date" value={{results.date}}><br>
+    <label>Unit: </label>
+    <label>lbs </label><input type="radio" name="unit" id="lbs" value=1 {{results.lbsChecked}}>
+    <label>kg </label><input type="radio" name="unit" id="kg" value=0 {{results.kgChecked}}><br>
+    <input type="hidden" name="id" value={{results.id}}>
+    <input type="submit" name="editExercise" id="editExercise" value="Edit Exercise">
+</form>
